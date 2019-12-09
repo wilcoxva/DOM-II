@@ -29,11 +29,16 @@ bG.addEventListener('keydown', (event) => {
 bG.addEventListener('keyup', (event) => {
     bG.style.backgroundColor = "white";
 });
-// wheel & click event
+// wheel & dblclick event
 const middle = document.querySelector('.content-section');
 middle.addEventListener('wheel', (event) => {
     middle.style.backgroundColor = "blue";
 });
 middle.addEventListener('dblclick', (event) => {
     middle.style.backgroundColor = "white";
+});
+// click event
+const funBus = document.querySelector('.logo-heading');
+funBus.addEventListener('click', (event) => {
+    funBus.style.fontSize = "7rem";
 });
