@@ -19,6 +19,7 @@ busImg.addEventListener('mouseup', (event) => {
 const mapPic = document.querySelector('.img-content img');
 window.addEventListener('resize', () => {
   mapPic.src = 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80';
+  event.stopPropagation();
 });
 // key event
 const bG = document.querySelector('html');
@@ -27,4 +28,12 @@ bG.addEventListener('keydown', (event) => {
 });
 bG.addEventListener('keyup', (event) => {
     bG.style.backgroundColor = "white";
+});
+// wheel & click event
+const middle = document.querySelector('.content-section');
+middle.addEventListener('wheel', (event) => {
+    middle.style.backgroundColor = "blue";
+});
+middle.addEventListener('dblclick', (event) => {
+    middle.style.backgroundColor = "white";
 });
