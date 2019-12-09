@@ -14,3 +14,11 @@ const mapPic = document.querySelector('.img-content img');
 window.addEventListener('resize', () => {
   mapPic.src = 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80';
 });
+// key event
+const bG = document.querySelector('html');
+bG.addEventListener('keydown', (event) => {
+    bG.style.backgroundColor = "red";
+});
+bG.addEventListener('keyup', (event) => {
+    bG.style.backgroundColor = "white";
+});
