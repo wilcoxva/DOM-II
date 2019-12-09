@@ -9,6 +9,12 @@ busImg.addEventListener('mouseleave', (event) => {
   busImg.style.transform = "scale(1.0)";
   busImg.style.transition = "all 0.3s";
 });
+busImg.addEventListener('mousedown', (event) => {
+    busImg.style.display = "none";
+});
+busImg.addEventListener('mouseup', (event) => {
+    busImg.style.display = "block";
+});
 // resize event
 const mapPic = document.querySelector('.img-content img');
 window.addEventListener('resize', () => {
