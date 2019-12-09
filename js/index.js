@@ -42,3 +42,10 @@ const funBus = document.querySelector('.logo-heading');
 funBus.addEventListener('click', (event) => {
     funBus.style.fontSize = "7rem";
 });
+// preventing default
+let links = document.querySelectorAll("nav a")
+links.forEach(element => {
+  element.addEventListener("click", function(event){
+        event.preventDefault()
+      })
+});
